@@ -1,4 +1,4 @@
-# linuxiamo.github.io
+# Informazioni su linuxiamo.github.io
 
 In questo repository raccolgo appunti e articoli informatici interessanti.
 
