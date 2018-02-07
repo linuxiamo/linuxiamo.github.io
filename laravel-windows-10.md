@@ -1,6 +1,6 @@
-# Installare Laravel+Homestead su Windows 10
+# Come installare Laravel+Homestead su Windows 10
 
-Informazioni tratte da [qui](https://medium.com/@eaimanshoshi/i-am-going-to-write-down-step-by-step-procedure-to-setup-homestead-for-laravel-5-2-17491a423aa)
+Le informazioni per questa guida sono tratte da [qui](https://medium.com/@eaimanshoshi/i-am-going-to-write-down-step-by-step-procedure-to-setup-homestead-for-laravel-5-2-17491a423aa).
 
 ## Prerequisiti
 
@@ -8,12 +8,13 @@ Informazioni tratte da [qui](https://medium.com/@eaimanshoshi/i-am-going-to-writ
 * [Download Git Bash](https://git-scm.com/download/win)
 * [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 * [Download Vagrant](https://www.vagrantup.com/downloads.html)
-* [Download Visual Studio Code](), opzionale
+* [Download Visual Studio Code](https://code.visualstudio.com) _(opzionale)_
 
 ## Installazione
 
-Le nostre operazioni prevedono di installare tutto in `C:\Progetti`. Homestead sarà installato in `_homestead`. Le chiavi crittografiche in `__rsa_keys`. 
-Installare Git Bash, Virtualbox e Vagrant in quest'ordine.
+Le nostre operazioni prevedono di installare tutto in `C:\Progetti`. Sotto la cartella suddetta, Homestead sarà installato in `_homestead`, mentre le chiavi crittografiche necessarie per l'accesso allo stesso, si troveranno in `__rsa_keys`. 
+
+Installare in quest'ordine: _Git Bash_, _Virtualbox_, _Vagrant_ ed eventualmente _Visual Studio Code_.
 
 ### a) Creare la Vagrant VM
 
@@ -79,7 +80,7 @@ folders:
       to: /home/vagrant/code
 ```
 
-Così (ricordarsi la minuscola per la lettera dell'unità):
+con il testo seguente:
 
 ```
 authorize: c:/Progetti/__rsa_keys/id_rsa.pub
@@ -92,8 +93,11 @@ folders:
       to: /home/vagrant/code
 ```
 
+**Nota: ricordarsi di usare la minuscola per indicare la lettera dell'unità e di separare il percorso con forward slash `/` invece del solito back slash `\` .**
+
+
 
 _ _ _
 ## Alternative
 
-Tutorial [Homestead improved](https://www.sitepoint.com/quick-tip-get-homestead-vagrant-vm-running/)
+In alternativa ad _Homestead_ è possibile usare _Homestead Improved_, una versione che semplifica alcune operazioni, [qui](https://www.sitepoint.com/quick-tip-get-homestead-vagrant-vm-running/) trovate un tutorial.
