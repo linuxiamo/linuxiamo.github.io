@@ -171,3 +171,53 @@ _ _ _
 ## Alternative
 
 In alternativa ad _Homestead_ è possibile usare _Homestead Improved_, una versione che semplifica alcune operazioni, [qui](https://www.sitepoint.com/quick-tip-get-homestead-vagrant-vm-running/) trovate un tutorial.
+
+---
+
+## Risoluzione problemi
+
+Se si verifica il problema:
+
+```
+$ homestead up
+Bringing machine 'homestead-7' up with 'virtualbox' provider...
+==> homestead-7: Checking if box 'laravel/homestead' is up to date...
+A VirtualBox machine with the name 'homestead-7' already exists.
+Please use another name or delete the machine with the existing
+name, and try again.
+```
+
+La soluzione è [questa](https://stackoverflow.com/a/30910282).
+
+Dal prompt di Windows, lanciare:
+```
+cd "C:\Program Files\Oracle\VirtualBox"
+vboxmanage list vms
+```
+
+Comparirà una lista di id macchina:
+
+```
+"Zorin OS" {02c48f8e-e46d-44eb-bb54-22cf1d83a0ae}
+"homestead-7" {d041b7b8-7a8f-446a-8eab-b13f43066d65}
+"ubuntu-16.04-amd64_1518144829485_92547" {1ee54cf9-9c9c-4760-a9b5-7b43a42f4532}
+```
+
+Il dato da copiare è `d041b7b8-7a8f-446a-8eab-b13f43066d65`.
+
+---
+
+Se si verifica il problema di autenticazione non riuscita:
+
+```
+default: SSH address: 127.0.0.1:2222
+default: SSH username: vagrant
+default: SSH auth method: private key
+default: Warning: Authentication failure. Retrying...     
+default: Warning: Authentication failure. Retrying...
+default: Warning: Authentication failure. Retrying...
+default: Warning: Authentication failure. Retrying...
+default: Warning: Authentication failure. Retrying...
+```
+
+La soluzione è [questa](https://stackoverflow.com/a/39590210).
