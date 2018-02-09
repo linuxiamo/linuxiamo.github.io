@@ -46,10 +46,13 @@ git clone https://github.com/laravel/homestead.git _homestead
 Ora bisogna generare le chiavi crittografiche per accedere ad _Homestead_. Da _git bash_ lanciare:
 ```bash
 cd /c/progetti
-mkdir _rsa_keys
-cd _rsa_keys
+mkdir __rsa_keys
+cd __rsa_keys
 ssh-keygen -t rsa -C “your_email@example.com”
 ```
+
+Alla domanda "Enter file in which to save the key (/c/Users/Nomeutente/.ssh/id_rsa):" rispondere `/c/Progetti/__rsa_keys/id_rsa`.
+Alla domanda sulla passphrase si può non rispondere nulla.
 
 Premere sempre INVIO per confermare. Non è necessario inserire una passphrase per generare le chiavi.
 
@@ -118,7 +121,7 @@ Nel file che si apre, alla prima riga vuota in basso, scrivere:
 
 In questo modo, ogni volta che nel browser digiteremo l'url `homestead.app`, automaticamente il browser servirà il nostro progetto.
 
-### Aggiornare il profilo di Git Bash per accedere facilmente ad Homestead
+### f) Aggiornare il profilo di Git Bash per accedere facilmente ad Homestead
 
 Per facilitarci l'utilizzo di _git bash_, possiamo personalizzare le impostazioni contenute nel file `.bash_profile` che è salvato in `C:\Users\%userprofile%`:
 
