@@ -85,6 +85,10 @@ keys:
 folders:
     - map: ~/code
       to: /home/vagrant/code
+
+sites:
+    - map: homestead.test
+      to: /home/vagrant/code/public
 ```
 
 con il testo seguente:
@@ -98,6 +102,10 @@ keys:
 folders:
     - map: c:/Progetti
       to: /home/vagrant/code
+
+sites:
+    - map: homestead.test
+      to: /home/vagrant/code/Laravel1/public      
 ```
 
 >_**Nota**: ricordarsi di usare la minuscola per indicare la lettera dell'unità e di separare il percorso con forward slash `/` invece del solito back slash `\`. Quindi il percorso che nella sintassi di Windows è `C:\Progetti`, diventa `c:/Progetti` in quella di `Homestead.yaml`._
@@ -116,10 +124,10 @@ code hosts
 Nel file che si apre, alla prima riga vuota in basso, scrivere:
 
 ```
-192.168.10.10 homestead.app
+192.168.10.10 homestead.test
 ```
 
-In questo modo, ogni volta che nel browser digiteremo l'url `homestead.app`, automaticamente il browser servirà il nostro progetto.
+In questo modo, ogni volta che nel browser digiteremo l'url `homestead.test`, automaticamente il browser servirà il nostro progetto.
 
 ### f) Aggiornare il profilo di Git Bash per accedere facilmente ad Homestead
 
@@ -156,10 +164,10 @@ Ora lanciamo il seguente comando per avviare _Homestead_:
 homestead up
 ```
 
-Per creare un nuovo progetto di ```Laravel```:
+Per creare un nuovo progetto di ```Laravel``` nella cartella `Laravel1`:
 ```
 homestead ssh
-composer create-project --prefer-dist laravel/laravel Laravel
+composer create-project --prefer-dist laravel/laravel Laravel1
 ```
 
 Per chiuderlo lanciamo:
