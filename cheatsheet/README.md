@@ -8,4 +8,4 @@ Laddove il documento non è stato redatto da me, ove possibile verrà effettuata
 
 ## Linguaggi disponibili
 
-* Python cheatsheet ([link](/cheatsheet-python.md))
+* Python cheatsheet ([link](cheatsheet-python.py))
