@@ -26,6 +26,37 @@ Oltre al corpo centrale (_area della pagina_), si riconoscono 16 sezioni in cui 
 
 Le _margin boxes_ sono usate esclusivamente per i contenuti generati via CSS.
 
+### Nomi delle Margin boxes
+
+<table style="margin-left:0px;border-collapse:collapse;border-width:1px;border-style:solid;">
+<colgroup><col style="width:108px; border-width:1px; border-style:solid">
+<col style="width:108px; border-width:1px; border-style:solid">
+<col style="width:108px; border-width:1px; border-style:solid">
+<col style="width:108px; border-width:1px; border-style:solid">
+<col style="width:108px; border-width:1px; border-style:solid">
+</colgroup><tbody><tr style="height:75px; border-width:1px; border-style:solid; text-align:center;">
+<td>top-left-corner</td>
+<td>top-left</td>
+<td>top-center</td>
+<td>top-right</td>
+<td>top-right-corner</td></tr>
+<tr style="height:75px; border-width:1px; border-style:solid; text-align:center;">
+<td>left-top</td>
+<td colspan="3" rowspan="3">main page area</td>
+<td>right-top</td></tr>
+<tr style="height:75px; border-width:1px; border-style:solid; text-align:center;">
+<td>left-middle</td>
+<td>right-middle</td></tr>
+<tr style="height:75px; border-width:1px; border-style:solid; text-align:center;">
+<td>left-bottom</td>
+<td>right-bottom</td></tr>
+<tr style="height:75px; border-width:1px; border-style:solid; text-align:center;">
+<td>bottom-left-corner</td>
+<td>bottom-left</td>
+<td>bottom-center</td>
+<td>bottom-right</td>
+<td>bottom-right-corner</td></tr></tbody></table>
+
 ## Pseudo-class selector per le pagine
 
 Esistono selettori per modificare i margini della pagina destra o sinistra di un documento (rilegato):
