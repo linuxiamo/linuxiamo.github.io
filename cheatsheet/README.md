@@ -6,4 +6,4 @@ I cheatsheet sono fogli riassuntivi di primitive e sintassi di un linguaggio. La
 
 ## Linguaggi disponibili
 
-* Python cheatsheet ([link](cheatsheet-python.md))
+* Python cheatsheet ([link](./cheatsheet-python.md))
