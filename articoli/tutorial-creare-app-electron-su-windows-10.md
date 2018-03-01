@@ -65,7 +65,7 @@ Il primo file viene creato automaticamente da `npm init`, gli altri possiamo cre
 
 ### Esempio: Hello world App 
 
-Un'app Hello world in Electron, può essere creata, con il seguente codice.
+Un'app Hello world in Electron può essere creata con il seguente codice:
 
 #### Contenuto di `main.js`
 
@@ -129,15 +129,15 @@ Un'app Hello world in Electron, può essere creata, con il seguente codice.
 
 #### Contenuto di `index.html`:
 
-In una comune pagina HTML, creare un elemento paragrafo e per verificare che funzioni, inserire un tag SCRIPT con all'interno i seguenti comandi:
+In una comune pagina HTML, creare un elemento paragrafo `P`. Per verificare che Electron funzioni correttamente, inserire nel paragrafo un tag `SCRIPT` con all'interno i seguenti comandi:
 
 ```javascript
   // Versione di Node
-  document.write(process.versions.node)
+  document.write("Node: " + process.versions.node)
   // Versione di Chrome
-  document.write(process.versions.chrome)
+  document.write("Chrome: " + process.versions.chrome)
   // Versione di Electron 
-  document.write(process.versions.electron)
+  document.write("Electron: " + process.versions.electron)
 ```
 
 ## Come eseguire l'app
