@@ -1,7 +1,13 @@
-#PYTHON CHEATSHEET
+# PYTHON CHEATSHEET
+
 '''
-https://youtu.be/N4mEzFDjqtA
+*** DISCLAIMER ***
+
+This cheatsheet was released by the folks at NewThinkTank. I copied it for the sake of backup.
+
+The document was originally posted in:
 http://www.newthinktank.com/2014/11/python-programming/
+https://youtu.be/N4mEzFDjqtA
 '''
 
 # import is used to make specialty functions available
