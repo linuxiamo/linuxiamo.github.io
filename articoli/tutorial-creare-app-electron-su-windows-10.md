@@ -1,10 +1,10 @@
 # Come creare un'app di Electron su Windows 10
 
-Questa guida per creare un'app di Electron è tratta dal [Getting started](https://electronjs.org/docs/tutorial/first-app) del sito ufficiale di Electron.
+Questa guida per creare un'app di Electron è tratta dal [Getting started](https://electronjs.org/docs/tutorial/first-app) del sito ufficiale di [Electron](https://electronjs.org/).
 
 ## Prerequisiti
 
-Per creare un'app di [Electron](https://electronjs.org/), occorre innanzitutto installare: 
+Per creare un'app di Electron, occorre innanzitutto installare: 
 * [Download Node.js](https://nodejs.org/)
 * [Download Git Bash](https://git-scm.com/download/win)
 * [Download Visual Studio Code](https://code.visualstudio.com) _(opzionale)_
