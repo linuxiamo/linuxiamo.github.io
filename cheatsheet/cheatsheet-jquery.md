@@ -8,7 +8,7 @@ Per progetti web:
 <!-- Jquery minified -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 ```
-Per progetti Electron:
+Per progetti Electron, dopo aver installato jQuery con `npm install jquery`, inserire nell'index.html:
 
 ```html
 <script>window.jQuery = window.$ = require('jquery');</script>
