@@ -9,3 +9,4 @@ Laddove il documento non è stato redatto da me, ove possibile verrà effettuata
 ## Linguaggi disponibili
 
 * Python cheatsheet ([link](cheatsheet-python.py))
+* Javascript e jQuery cheatsheet ([link](cheatsheet-jquery.md))
